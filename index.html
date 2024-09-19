@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Property of Wai Zhung Ng 2024-->
+
+        <title> CV Beautified - Wai Zhung Ng </title>
+        <!-- BootStrap CDN-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <!-- I am using a resume template by Xiaoying Riley, called 'Pillar'-->
+        <link id="theme-style" rel="stylesheet" href="pillar-1.css">
+
+    </head>
+    <body style="background-color:lightslategray">
+        
+        <!-- I want to wrap everything inside an <article>, that centers everything and makes the position relative (so I don't have to define it each time)-->
+        <!-- The resume template has resume-wrapper, resume-wrapper inner, resume-body, and more -->
+        <article class="text-center position-relative resume-wrapper my-2">
+            <div class="resume-wrapper-inner mx-auto text-start bg-white shadow-lg rounded">
+                
+                <!-- The header tag classifies the "header" part of the resume, with my name and contact details-->
+                <header class="resume-header pt-4 pt-md-0 rounded">
+                    <!-- First row, basically the header -->
+                    <div class="row">
+                        <!-- Professional picture of me. resume-picture-holder formats it to fit nicely -->
+                        <div class="col-block col-md-auto resume-picture-holder text-center text-md-start">
+                            <img class="picture" src="profile.jpg" alt="Picture of my resume">
+                        </div>
+                        <!-- 2nd column, my name and contact details-->
+                        <div class="col">
+                            <div class="row p-4 justify-content-center justify-content-md-between">
+                                <div class="primary-info col-auto text-white-50">
+                                    <!-- name, title are all defined by resume-template -->
+                                    <h1 class="name mt-0 mb-1 text-white text-uppercase">Wai Zhung Ng</h1>
+                                    <div class="title mb-3 text-white">Junior Software Developer</div>
+                                    <ul class="list-unstyled">
+                                        <li>✉ tonyng1337@gmail.com</li>
+                                        <li>☎ +60192225518</li>
+                                    </ul>
+                                </div><!-- Marks the end of the primary info, name etc -->
+                            </div><!-- Marks the end of the row -->
+                        </div><!-- Marks the end of the column -->
+                    </div><!--Marks the end of the entire row-->
+                </header>
+
+                <!-- THE BODY PART -->
+                <div class="resume-body">
+                        <!-- Defining a <section> for my career objectives -->
+                        <section class="resume-section summary-section">
+                            <h2 class="resume-section text-align-start fs-5 font-weight-bold mt-5 mx-5 pb-2 text-uppercase fw-bold" style="border-bottom:1px solid ">Career Objective</h2>
+                            <div class="resume-section-content">
+                                <p class="mx-5 pb-4" style="text-align:justify"> Wai Zhung Ng is a purpose-driven mechanical engineering first-class with honours graduate (CGPA 4.0) from the University of Nottingham. He is seeking a Junior Software Developer role in the IT industry to apply his foundation of problem-solving and analytical skills to write efficient code and contribute to innovative solutions. He aspires to grow in a dynamic tech environment while making a meaningful impact. </p>
+                            </div>    
+                        </section>
+
+                        <!-- Here, I want to use a table or grid, and split my content into 2 tables, left side my education and on the right side is my skills being evaluated with grids of different colours like the one shown in the exmaple format, -->
+                        <!-- Defining the first row -->
+                        <div class="row g-0">
+                            <div class="col-md-9">
+                                
+                                <!-- The first section I will talk about my projects since I do not have much working experience -->
+                                <section class="resume-section experience-section mb-5">
+                                    <h2 class="resume-section text-align-start fs-5 font-weight-bold pb-2 text-uppercase fw-bold" style="border-bottom:1px solid; margin-left:50px; margin-right:50px">Projects</h2>
+                                        <div class="resume-section-content mt-3" style="margin-left: 35px;">
+
+                                            <!-- In the resume template, there is a 'timeline' option with the circle -->
+                                            <!-- FIRST PROJECT INPUT, HTML / CSS RESUME PROJECT -->
+                                            <article class="resume-timeline-item position-relative pb-2" style="margin-left:50px; margin-right:50px">
+                                                
+                                                <!-- The timeline content -->
+                                                <div class="resume-timeline-item-header mb-2">
+                                                    <div class="d-flex flex-column flex-md-row">
+                                                        <h3 class="resume-position-title font-weight-bold mb-1">Resume in HTML/CSS with BootStrap </h3>
+                                                        <div class="resume-company-name ms-auto">TalentLabs, Malaysia</div>
+                                                    </div> <!--//row-->
+                                                    <div class="resume-position-time">2024 September</div>
+                                                </div> <!--//resume-timeline-item-header-->
+                                                <div class="resume-timeline-item-desc">
+                                                    <h4 class="resume-timeline-item-desc-heading font-weight-bold">Primary features:</h4>
+                                                    <ul style="text-align:justify">
+                                                        <li>Utilised a .css template that preformatted margins and paddings.</li>
+                                                        <li>Utilised grid structures with templates from BootStrap </li>
+                                                        <li>Included relative positioning to ensure user-friendly viewing</li>
+                                                        <li>Utilised ChatGPT to save time on troubleshooting and debugging</li>
+                                                    </ul>
+                                                    <h4 class="resume-timeline-item-desc-heading font-weight-bold">Languages used:</h4>
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item"><span class="badge bg-secondary badge-pill">HTML/CSS</span></li>
+                                                    </ul>
+                                                </div><!--//resume-timeline-item-desc-->
+                                            </article><!--//resume-timeline-item-->
+
+                                            <!-- SECOND PROJECT INPUT, TIC-TAC-TOE GAME -->
+                                            <article class="resume-timeline-item position-relative pb-2 mx-5">
+                                                
+                                                <!-- The timeline content -->
+                                                <div class="resume-timeline-item-header mb-2">
+                                                    <div class="d-flex flex-column flex-md-row">
+                                                        <h3 class="resume-position-title font-weight-bold mb-1">Tic-Tac-Toe Game in JavaScript</h3>
+                                                        <div class="resume-company-name ms-auto">TalentLabs, Malaysia</div>
+                                                    </div> <!--//row-->
+                                                    <div class="resume-position-time">2024 September</div>
+                                                </div> <!--//resume-timeline-item-header-->
+                                                <div class="resume-timeline-item-desc">
+                                                    <h4 class="resume-timeline-item-desc-heading font-weight-bold">Primary features:</h4>
+                                                    <ul style="text-align:justify">
+                                                        <li>Command-line sequence game with turn-based player logic.</li>
+                                                        <li>Input validation to handle out-of-bound moves, occupied spots and invalid entries.</li>
+                                                        <li>Enhanced the game with color-coded visuals for players and winning moves.</li>
+                                                        <li>Designed a retry system, allowing users to restart the game or exit.</li>
+                                                        <li>Object-oriented techniques to manage game-board management and win/tie logic.</li>
+                                                    </ul>
+                                                    <h4 class="resume-timeline-item-desc-heading font-weight-bold">Languages used:</h4>
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item"><span class="badge bg-secondary badge-pill">JavaScript</span></li>
+                                                        <li class="list-inline-item"><span class="badge bg-secondary badge-pill">Node.JS</span></li>
+                                                    </ul>
+                                                </div><!--//resume-timeline-item-desc-->
+                                            </article><!--//resume-timeline-item-->
+
+                                            <!-- THIRD PROJECT INPUT, AUTOMATIC PET FOOD DISPENSER -->
+                                            <article class="resume-timeline-item position-relative pb-2 mx-5">
+                                                
+                                                <!-- The timeline content -->
+                                                <div class="resume-timeline-item-header mb-2">
+                                                    <div class="d-flex flex-column flex-md-row">
+                                                        <h3 class="resume-position-title font-weight-bold mb-1">Automatic Pet Food Dispenser with C/C++</h3>
+                                                        <div class="resume-company-name ms-auto">University of Nottingham, Malaysia</div>
+                                                    </div> <!--//row-->
+                                                    <div class="resume-position-time">2021 March</div>
+                                                </div> <!--//resume-timeline-item-header-->
+                                                <div class="resume-timeline-item-desc">
+                                                    <h4 class="resume-timeline-item-desc-heading font-weight-bold">Primary features:</h4>
+                                                    <ul style="text-align:justify">
+                                                        <li>Built-in LDR sensors that notifies the user of food levels.</li>
+                                                        <li>Servomotor-powered dispense mechanism that accepts time-based inputs or user-inputs (i.e, cooldown of 6 hours, or pet-trained inputs).</li>
+                                                        <li>Able to operate for up to a week with minimal human input with adequate storage.</li>
+                                                        <li>Utilized control structures like loops and conditional statements to efficiently handle user inputs and variable storage.</li>
+                                                    </ul>
+                                                    <h4 class="resume-timeline-item-desc-heading font-weight-bold">Languages used:</h4>
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item"><span class="badge bg-secondary badge-pill">C/C++</span></li>
+                                                        <li class="list-inline-item"><span class="badge bg-secondary badge-pill">TinkerCad</span></li>
+                                                    </ul>
+                                                </div><!--//resume-timeline-item-desc-->
+                                            </article><!--//resume-timeline-item-->
+
+                                        </div>
+                                </section> <!-- The end of my projects section -->
+
+                            </div>  <!-- Here is the end of the col-md-9, so the second column, col-md-3 will be defined after here -->  
+
+                            <div class="col-md-3 g-0">
+                                <!-- Creating a side-section to talk about my education -->
+                                <section class="resume-section mb-5">
+                                    <h2 class="resume-section fs-5 pb-2 text-uppercase fw-bold" style="border-bottom:1px solid; margin-right: 50px;">Education</h2>
+                                    <div class="resume-section-content">
+                                        <ul class="list-unstyled">
+                                            <li class="mb-3">
+                                                <div class="resume-degree font-weight-bold" style="margin-right:50px;">Foundation Cert. in Software Engineering</div>
+                                                <div class="resume-degree-org">TalentLabs KYDP, Malaysia</div>
+                                                <div class="resume-degree-time">2024 September - 2024 December</div>
+                                            </li>
+                                            <li class="mb-3">
+                                                <div class="resume-degree font-weight-bold" style="margin-right:50px; text-align:justify">BEng (Hons) in Mech. Eng</div>
+                                                <div class="resume-degree-org">University of Nottingham, UK</div>
+                                                <div class="resume-degree-time">2020 September - 2024 June</div>
+                                            </li>
+                                            <li class="mb-3">
+                                                <div class="resume-degree font-weight-bold" style="margin-right:50px; text-align:justify">Cambridge A-Levels</div>
+                                                <div class="resume-degree-org">Methodist College Kuala Lumpur, Malaysia</div>
+                                                <div class="resume-degree-time">2019 January - 2020 June </div>
+                                            </li>
+                                            <li class="mb-2">
+                                                <div class="resume-degree font-weight-bold" style="margin-right:50px; text-align:justify">Cambridge IGCSE</div>
+                                                <div class="resume-degree-org">St. John's International School, Malaysia</div>
+                                                <div class="resume-degree-time">2014 January - 2018 November </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </section>
+                            
+                                <!-- Creating a second side-section to talk about my awards -->
+                                <section class="resume-section mb-5">
+                                    <h2 class="resume-section fs-5 pb-2 text-uppercase fw-bold" style="border-bottom:1px solid; margin-right: 50px;">Awards</h2>
+                                    <div class="resume-section-content">
+                                        <ul class="list-unstyled">
+                                            <li class="mb-3">
+                                                <div class="resume-degree font-weight-bold" style="margin-right:50px;">🏆 Head of Department x2</div>
+                                                <div class="resume-degree-org">University of Nottingham, UK</div>
+                                                <div class="resume-degree-time">2023 June, 2024 June</div>
+                                            </li>
+                                            <li class="mb-3"></li>
+                                                <div class="resume-degree font-weight-bold" style="margin-right:50px;">🏆 Dean's Excellence x2</div>
+                                                <div class="resume-degree-org">University of Nottingham, Malaysia</div>
+                                                <div class="resume-degree-time">2021 June, 2022 June</div>
+                                            </li>
+                                            <li class="mb-3"></li>
+                                                <div class="resume-degree font-weight-bold" style="margin-right:50px;">🏆 75% Merit Scholarship</div>
+                                                <div class="resume-degree-org">Methodist College Kuala Lumpur, Malaysia</div>
+                                                <div class="resume-degree-time">2019 January</div>
+                                            </li>
+                                            <li class="mb-3"></li>
+                                                <div class="resume-degree font-weight-bold" style="margin-right:50px;">🏆 High Achievers Award</div>
+                                                <div class="resume-degree-org">St. John's International School</div>
+                                                <div class="resume-degree-time">2018 December</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </section>
+                            </div>
+                        </div> <!-- Here is the end of the large body table, for my own reference -->
+                    </div>
+                </div>
+
+                <!-- A disclaimer to show that this is my work -->
+                <p class="my-3"> Property of Wai Zhung Ng 2024. All rights reserved. </p>
+            </article>
+        </body>
+</html>
